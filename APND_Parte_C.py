@@ -62,7 +62,7 @@
 # D) Se puede acceder a un valor utilizando su clave. 
 # E) Los diccionarios no permiten almacenar otros diccionarios. 
 # F) Son útiles para representar entidades como alumnos, libros o productos. 
-#   RESPUESTAS CORRECTAS: A - B - D - E - F
+#   RESPUESTAS CORRECTAS: A - B - D - F
   
   
  
@@ -117,26 +117,28 @@
 
 # Estructura elegida: DICCIONARIO.
 
-
-# Almacenan pares clave-valor. Las claves deben ser unicas. Podemos acceder a un valor mediante su clave (ejemplo: ave["nombre_comun"]).
-ave = {
+# Almacenan pares clave-valor. Las claves deben ser unicas. 
+ave = { 
     "nombre_comun": "Tijereta",
     "nombre_cientifico": "Tyrannus savana",
-    "familia": "Tyrannidae",
-}
+    "familia": "Tyrannidae" 
+    }
 
-# Podemos acceder a los valores utilizando sus respectivas claves.
+
+# Podemos acceder a los valores utilizando sus respectivas claves. (ejemplo: ave["nombre_comun"]).
 print("REGISTRO DE AVE")
 print("-------------------------")
 
-print("Nombre común:", ave["nombre_comun"])
-print("Nombre científico:", ave["nombre_cientifico"])
-print("Familia:", ave["familia"])
+print("Nombre común:", ave["nombre_comun"]) #clave: nombre_comun
+print("Nombre científico:", ave["nombre_cientifico"]) #clave: nombre_cientifico
+print("Familia:", ave["familia"]) #clave: familia
+
 
 # Podemos incorporar una clave nueva y su valor correspondiente.
 ave["ambiente"] = "Pastizales y ambientes abiertos"
 
 print("Ambiente:", ave["ambiente"])
+
 
 # Podemos almacenar otro diccionario dentro del primero.
 ave["ubicacion"] = {
@@ -144,4 +146,19 @@ ave["ubicacion"] = {
     "pais": "Argentina"
 }
 
+
+# Juntos, ambos diccionarios quedarian asi: (medio confuso, yo lo agregaria como pares de clave-valor)
+ave = {
+    "nombre_comun": "Tijereta",
+    "nombre_cientifico": "Tyrannus savana",
+    "familia": "Tyrannidae",
+
+    "ubicacion": {
+        "provincia": "Buenos Aires",
+        "pais": "Argentina"
+    }
+}
+
+
 print("Provincia:", ave["ubicacion"]["provincia"])
+print("Provincia:", ave["ubicacion"]["pais"])
