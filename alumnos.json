@@ -1,0 +1,14 @@
+{
+    "12345678": {
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "edad": 5,
+        "nota": 2
+    },
+    "87654321": {
+        "nombre": "Maria",
+        "apellido": "Gomez",
+        "edad": 75,
+        "nota": 10
+    }
+}
